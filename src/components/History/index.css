@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #3367d6;
+  padding: 18px;
+  display: flex;
+  justify-content: space-around;
+}
+.head {
+  margin-left: 20px;
+}
+.search-logo {
+  background-color: #2850a7;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: solid #ececec 0.5px;
+  align-self: center;
+}
+.input {
+  background-color: #2850a7;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: solid #ececec 0.5px;
+  align-self: center;
+  color: #f8fafc;
+}
