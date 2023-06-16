@@ -78,18 +78,23 @@ const initialHistoryList = [
 ]
 
 class History extends Component {
-  state = {initialList: initialHistoryList, searchInput: '', isShow: false}
+  state = {initialList: initialHistoryList, searchInput: ''}
 
   onChang = event => {
     this.setState({searchInput: event.target.value})
   }
 
-  deleteHistory = id => {}
+  deleteHistory = id => {
+    const {initialList} = this.state
+    const filterList = initialList.filter(each => each.id !== id)
+
+    this.setState({initialList: filterList})
+  }
 
   render() {
-    const {initialList, searchInput, isShow} = this.state
+    const {initialList, searchInput} = this.state
     const searchResult = initialList.filter(each =>
-      each.title.toLowerCase.includes(each.title.toLowerCase()),
+      each.title.toLowerCase().includes(searchInput.toLowerCase()),
     )
     return (
       <div>

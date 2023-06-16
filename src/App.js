@@ -76,7 +76,6 @@ const initialHistoryList = [
     domainUrl: 'google.com',
   },
 ]
-
 // Replace your code here
 const App = () => <History />
 
